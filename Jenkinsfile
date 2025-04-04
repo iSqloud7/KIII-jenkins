@@ -4,7 +4,7 @@ node {
         checkout scm
     }
     stage('Build image') {
-       app = docker.build("isqloud7/kiii-jenkins")
+       app = docker.build("iSqloud7/KIII-jenkins")
     }
     stage('Push image') {   
         docker.withRegistry('https://registry.hub.docker.com', 'ivKeeX-dockerhub') {
